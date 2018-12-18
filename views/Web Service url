@@ -1,0 +1,1010 @@
+							Tuneem JQ Mobile. 
+
+
+
+	Login : 1
+
+	http://tuneem.com/tuneem/web/newwebservicesec.php?module=login&uname=admin&pass=asdfgh
+
+
+
+	Traing Class===> CRT[ Class Room Trainig ]
+
+
+	http://tuneem.com/tuneem/web/newwebservicesec.php?module=availabletrainingclass&userid=4
+
+
+	Infonuggets ===> 
+
+	http://tuneem.com/tuneem/web/newwebservicesec.php?module=availableinfonuggets&userid=4
+
+
+	Leadership ===>
+	
+	http://tuneem.com/tuneem/web/newwebservicesec.php?module=leadership&userid=4
+
+	
+	Survey ===>
+
+	http://tuneem.com/tuneem/web/newwebservicesec.php?module=availablesurvey&userid=4
+	
+
+
+	Offisocio ===>
+
+	http://tuneem.com/tuneem/web/newwebservicesec.php?module=offisocio&userid=4
+
+
+	file_likes ==>
+
+	http://tuneem.com/tuneem/web/newwebservicesec.php?module=file_likes&userid=4
+
+
+
+	http://www.androidhub4you.com/2014/10/android-custom-shape-imageview-rounded.html
+
+
+	http://androidexample.com/Show_Phone_Contacts_In_AutoComplete_Suggestions_-_Android_Example/index.php?view=article_discription&aid=106&aaid=128
+
+
+	http://www.learn-android-easily.com/2013/07/android-development-tutorials.html
+
+
+	http://kalisandroid.blogspot.in/2015/01/load-pdf-files.html
+
+
+	http://kalisandroid.blogspot.in/2014/04/sqlitemanager-plugin-for-eclipse.html --> example source code
+
+
+	 Login
+
+
+	 https://tuneem.com/seed/newwebservice.php?module=login&uname=akash&pass=pass@123
+
+
+	 https://tuneem.com/seed/newwebservice.php?module=login&uname=EMP55&pass=pass@123
+
+	
+	availabletrainingclass
+	
+	https://tuneem.com/seed/newwebservice.php?module=availabletrainingclass&userid=46
+
+	available
+
+	 https://tuneem.com/seed/newwebservice.php?module=available&userid=46
+
+	availableojt
+
+	 https://tuneem.com/seed/newwebservice.php?module=availableojt&userid=46
+
+
+	remarks
+
+	https://tuneem.com/seed/newwebservice.php?module=remarks&userid=46
+
+	modulemaster
+
+	https://tuneem.com/seed/newwebservice.php?module=modulemaster&userid=46
+
+
+	classcertificate
+
+	https://tuneem.com/seed/newwebservice.php?module=classcertificate&userid=46
+
+	leadership
+
+	https://tuneem.com/seed/newwebservice.php?module=leadership&userid=46
+
+	leadership response
+
+	{"message":{"success":"true","data":{"result":[{"t_id":"145","title":"ICICI flag unveiling","emp_name":"admin ","created_date":"2015-03-03 14:14:30","description":"Inspirational speech","location":"https:\/\/tuneem.com\/seed\/file_transfer\/ChandaKochharICICIGroupflagunveiling.mp4"},{"t_id":"153","title":"CEO of ICICI Praises Budget 15","emp_name":"admin ","created_date":"2015-03-03 16:28:17","description":"Nice speech","location":"https:\/\/tuneem.com\/seed\/file_transfer\/CEOofICICIPraisesBudget15.mp4"},{"t_id":"159","title":"Heloo","emp_name":"admin ","created_date":"2015-04-02 12:37:34","description":"Hi","location":"https:\/\/tuneem.com\/seed\/file_transfer\/record806783901.mp3"},{"t_id":"264","title":"QQQQQQQQQQQQQ","emp_name":"Superadmin","created_date":"2015-05-28 12:12:53","description":"qqqqqqqqqqqq","location":"https:\/\/tuneem.com\/seed\/file_transfer\/drop.avi"}]}}}
+
+
+	ojt
+
+
+	https://tuneem.com/seed/newwebservice.php?module=ojt&ojt_id=82&userid=46
+
+
+	{"message":{"success":"true","data":{"result":[{"ojt_id":"82","ojt_code":"OJT82","ojt_name":"Elan ojt training","module_id":"31","module_name":"OJT Module","start_date":"2015-06-03 12:01:00","end_date":"2015-06-15 12:01:00"},{"ojt_id":"86","ojt_code":"OJT86","ojt_name":"what is ojt?","module_id":"33","module_name":"chandy testing","start_date":"2015-06-11 14:04:00","end_date":"2015-06-30 14:04:00"}]}}}
+	
+=========================================================Learning Center  Menu Module=========================================================================
+
+			
+	premiumsales
+
+	https://tuneem.com/seed/newwebservice.php?module=premiumsales&userid=46&data=[{"bills_cut":"Vihj","values_sold":"Chhh","lines_sold":"Vhhh","comment":"1","created_date":"2015-06-11 16:9:19","emp_id":"46"}]
+
+	evolution
+
+	https://tuneem.com/seed/newwebservice.php?module=evolution&userid=46&data=[{"module_id":"41","comment":"Dd"}]
+
+
+	Employee Speak
+
+	https://tuneem.com/seed/newwebservice.php?module=filetransfer&userid=46&akey=null&data=[{"title" : "Chabdry","content"  : "Gjnbbvbh","filename" : "1434094966773.jpg"}]
+
+	Employee Speak response
+
+	{"message":{"success":"true","message":"successfully Inserted"}}
+
+
+
+
+	https://tuneem.com/seed/newwebservice.php?module=surveyquestion&survey_id=35&akey=null&userid=46
+
+	{"message":{"success":"true","data":{"result":[{"sid":"81","title":"hospitality monitoring test","description":"hospital management testing?","option_A":"riding","option_B":"view","option_C":"opt","option_D":"","option_E":""}]}}}
+
+
+	https://tuneem.com/seed/newwebservice.php?module=surveyquestion&survey_id=39&akey=null&userid=46
+
+
+
+
+
+=============================================Class Room Training=====================================================================by chandru==========
+
+Data Getting from server.
+
+	
+		
+
+http://tuneem.com/tuneem/web/newwebservicesec.php?module=availabletrainingclass&userid=4
+
+
+{
+    "message": {
+        "success": "true",
+        "data": {
+            "result": [
+                {
+                    "crt_id": "9",
+                    "title": "oct3 test",
+                    "tag": "Insurance",
+                    "description": "Insurance Basics",
+                    "status": null,
+                    "start_date": "2015-09-03 10:50:07",
+                    "end_date": "2015-09-30 10:50:07",
+                    "module_name": null,
+                    "material": "0"
+                },
+            ]
+        }
+    }
+}
+
+
+sessionpassword ==> data getting from server. 1
+
+	http://tuneem.com/tuneem/web/newwebservicesec.php?module=sessionpassword&userid=4&class_id=9
+
+{
+    "message": {
+        "success": "true",
+        "data": {
+            "result": [
+                {
+                    "crt_id": "9",
+                    "module_id": "40",
+                    "session_id": "17",
+                    "session_password": "venu",
+                    "session_name": "Algebra Session",
+                    "status": "Active",
+                    "sess_type_status": "1",
+                    "description": "ALgebra session"
+                }
+            ]
+        }
+    }
+}
+
+
+
+sessiontypepassword ==> Data getting from server. 2
+
+
+	http://tuneem.com/tuneem/web/newwebservicesec.php?module=sessiontypepassword&userid=4&class_id=9
+
+{
+    "message": {
+        "success": "true",
+        "data": {
+            "result": [
+                {
+                    "session_id": "17",
+                    "session_type_id": "1",
+                    "session_type": "Pre Test",
+                    "session_type_password": "venu",
+                    "sess_type_pass_status": "1",
+                    "crt_id": "9"
+                },
+                {
+                    "session_id": "17",
+                    "session_type_id": "2",
+                    "session_type": "Post Test",
+                    "session_type_password": "venu",
+                    "sess_type_pass_status": "1",
+                    "crt_id": "9"
+                },
+                {
+                    "session_id": "17",
+                    "session_type_id": "3",
+                    "session_type": "Feed Back",
+                    "session_type_password": "venu",
+                    "sess_type_pass_status": "1",
+                    "crt_id": "9"
+                }
+            ]
+        }
+    }
+}
+
+
+
+trainingclass ===> Data getting from server. 3
+
+
+http://tuneem.com/tuneem/web/newwebservicesec.php?module=trainingclass&userid=4&class_id=9
+
+{
+    "message": {
+        "success": "true",
+        "data": {
+            "result": [
+                {
+                    "session_id": "17",
+                    "crt_id": "9",
+                    "title": "Quick Plan Algebra CRT",
+                    "tag": "Algebra ",
+                    "description": "Algebra ",
+                    "status": null,
+                    "start_date": "2015-09-03 10:30:03",
+                    "end_date": "2015-09-30 11:55:03",
+                    "question_id": "123",
+                    "question_type": "1",
+                    "question": "Is 5 an irrational number?",
+                    "question_code": "Q123",
+                    "option_A": "Yes",
+                    "option_B": "No",
+                    "option_C": "",
+                    "option_D": "",
+                    "option_E": "",
+                    "correct_answer": "B",
+                    "num_answers": "2",
+                    "cue": "",
+                    "num_correct_ans": "1"
+                }
+            ]
+        }
+    }
+}
+
+
+availablematerial ===> Data getting from Server.
+
+
+http://tuneem.com/tuneem/web/newwebservicesec.php?module=availablematerial&userid=4&class_id=9
+
+{
+    "message": {
+        "success": "true",
+        "data": {
+            "result": [
+                {
+                    "material_id": "5",
+                    "title": "test pre reading material",
+                    "description": "test md",
+                    "crt_id": "17",
+                    "emp_id": "62",
+                    "fileurl": "uploads/chandru.jpg",
+                    "file_name": "chandru.jpg",
+                    "content_type": "Audio",
+                    "f_description": "tes"
+                }
+            ]
+        }
+    }
+}
+
+
+
+materialquestion ==> data getting from server.
+
+
+http://tuneem.com/tuneem/web/newwebservicesec.php?module=materialquestion&userid=4&class_id=9&material_id
+
+
+{
+    "message": {
+        "success": "true",
+        "data": {
+            "result": [
+                {
+                    "question_id": "129",
+                    "question": "What is this module towards valuable?",
+                    "option_A": "open",
+                    "option_B": "closed",
+                    "option_C": "not declared",
+                    "option_D": "",
+                    "option_E": "",
+                    "correct_answer": "A",
+                    "marks": null,
+                    "num_answer": "3",
+                    "num_correct_answer": "1",
+                    "crt_id": "17",
+                    "material_id": "5"
+                }
+            ]
+        }
+    }
+}
+
+
+
+
+
+updatetrainingclass ==> Data sending to server.
+
+
+	http://tuneem.com/tuneem/web/newwebservicesec.php?module=updatetrainingclass&akey=null&userid=4&data=[{"question_id":"34","session_id":"6","response":"A","class_id":"19"},{"question_id":"35","session_id":"6","response":null,"class_id":"19"}]
+
+
+Response : here they are not given session id. They are given question id only.
+
+
+{
+    "message": {
+        "success": "true",
+        "message": "successfully Updated",
+        "data": {
+            "class_id": [
+                "19"
+            ],
+            "session": {
+                "class19": [
+                    "34",
+                    "35"
+                ]
+            }
+        }
+    }
+}
+
+
+======================================================OJT Module ====================================================================================
+
+
+Data Getting from server.
+
+
+http://tuneem.com/tuneem/web/newwebservicesec.php?module=availableojt&userid=4
+
+{
+    "message": {
+        "success": "true",
+        "data": {
+            "result": [
+                {
+                    "ojt_id": "1",
+                    "title": "oct7 test",
+                    "tag": "test",
+                    "description": "test by joni",
+                    "status": "Published",
+                    "start_date": "2015-09-07 12:45:03",
+                    "end_date": "2015-09-30 06:50:03",
+                    "f_name": "Video",
+                    "filename": "Objectionhandling.mp4",
+                    "path": "uploads/Objectionhandling.mp4",
+                    "content": "Objection Handling",
+                    "subject_name": "Objection Handling",
+                    "f_description": "Objection Handling"
+                },
+                {
+                    "ojt_id": "2",
+                    "title": "On Job Training",
+                    "tag": "OJT",
+                    "description": "OJT",
+                    "status": "Published",
+                    "start_date": "2015-09-07 02:20:32",
+                    "end_date": "2015-12-31 11:40:32",
+                    "f_name": "Video",
+                    "filename": "Objectionhandling.mp4",
+                    "path": "uploads/Objectionhandling.mp4",
+                    "content": "Objection Handling",
+                    "subject_name": "Objection Handling",
+                    "f_description": "Objection Handling"
+                }
+            ]
+        }
+    }
+}
+
+
+
+Data Getting from server.
+
+http://tuneem.com/tuneem/web/newwebservicesec.php?module=ojt&userid=4&ojt_id=2
+
+
+{
+    "message": {
+        "success": "true",
+        "data": {
+            "result": [
+                {
+                    "ojt_id": "2",
+                    "Participant_Name": "essaki",
+                    "Participant_id": "62",
+                    "question_id": "78",
+                    "question": "Did the sales officer do the following in the Post sales step",
+                    "question_code": "Q78",
+                    "option_A": "Complete actions post the call",
+                    "option_B": "Updated DSR properly",
+                    "option_C": "",
+                    "option_D": "",
+                    "option_E": "",
+                    "correct_answer": "A",
+                    "num_answers": "2",
+                    "cue": "Post sales step",
+                    "num_correct_ans": "1"
+                }
+            ]
+        }
+    }
+}
+
+
+updateojt ==> data send  to server.
+
+
+http://tuneem.com/tuneem/web/newwebservicesec.php?module=updateojt&akey=EJ63WXQXzX05wnZhfueVuHqwUIqhajb8&userid=4&data=[{"question_id":"86","ojt_id":"9","opt_a_rating":null,"opt_b_rating":null,"opt_c_rating":null,"opt_d_rating":null,"opt_e_rating":null,"opt_f_rating":null,"opt_g_rating":null,"opt_h_rating":null,"opt_i_rating":null,"opt_j_rating":null,"comments":"Tedt","file_location":null,"emp_id":"62","remark":""},{"question_id":"87","ojt_id":"9","opt_a_rating":"4","opt_b_rating":"4","opt_c_rating":"4","opt_d_rating":"4","opt_e_rating":null,"opt_f_rating":null,"opt_g_rating":null,"opt_h_rating":null,"opt_i_rating":null,"opt_j_rating":null,"comments":"Go","file_location":null,"emp_id":"62","remark":""},{"question_id":"86","ojt_id":"9","opt_a_rating":null,"opt_b_rating":null,"opt_c_rating":null,"opt_d_rating":null,"opt_e_rating":null,"opt_f_rating":null,"opt_g_rating":null,"opt_h_rating":null,"opt_i_rating":null,"opt_j_rating":null,"comments":"Tedt","file_location":null,"emp_id":"62","remark":""},{"question_id":"87","ojt_id":"9","opt_a_rating":"4","opt_b_rating":"4","opt_c_rating":"4","opt_d_rating":"4","opt_e_rating":null,"opt_f_rating":null,"opt_g_rating":null,"opt_h_rating":null,"opt_i_rating":null,"opt_j_rating":null,"comments":"Go","file_location":null,"emp_id":"62","remark":""}]
+
+
+
+Response After given data to server.
+
+{
+    "message": {
+        "success": "true",
+        "message": "successfully Updated",
+        "data": {
+            "ojt_id": [
+                {
+                    "emp_id": "62",
+                    "question_id": "86",
+                    "ojt_id": "9"
+                },
+                {
+                    "emp_id": "62",
+                    "question_id": "87",
+                    "ojt_id": "9"
+                },
+                {
+                    "emp_id": "62",
+                    "question_id": "86",
+                    "ojt_id": "9"
+                },
+                {
+                    "emp_id": "62",
+                    "question_id": "87",
+                    "ojt_id": "9"
+                }
+            ]
+        }
+    }
+}
+
+
+
+======================================================Survey==============================================================================
+
+Data geeting from server.
+
+http://tuneem.com/tuneem/web/newwebservicesec.php?module=availablesurvey&userid=4
+
+
+{
+    "message": {
+        "success": "true",
+        "data": {
+            "result": [
+                {
+                    "survey_id": "8",
+                    "title": "village level survey info eighteen",
+                    "descrption": "survey description testing testing.",
+                    "f_name": "Image",
+                    "tag": "survey testing product eighteen",
+                    "filename": "EmployeeSatisfactionFactors.jpg",
+                    "path": "uploads/EmployeeSatisfactionFactors.jpg",
+                    "content": "Employee Satisfation Survey",
+                    "subject_name": "Employee Satisfaction Survey",
+                    "f_description": "Employee Satisfation Survey"
+                }
+            ]
+        }
+    }
+}
+
+
+question
+
+http://tuneem.com/tuneem/web/newwebservicesec.php?module=availablesurvey&userid=4&survey_id=8
+
+
+{
+    "message": {
+        "success": "true",
+        "data": {
+            "result": [
+                {
+                    "survey_id": "8",
+                    "question_id": "89",
+                    "description": "village level survey info eighteen",
+                    "question": "I feel encouraged to come up with new and better ways of doing things",
+                    "option_A": "Strongly Disagree",
+                    "option_B": "Somewhat Disagree",
+                    "option_C": "Neither Agree nor Disagree",
+                    "option_D": "Somewhat Agree",
+                    "option_E": "Agree",
+                    "num_answers": "5",
+                    "num_correct_ans": "1"
+                }
+            ]
+        }
+    }
+}
+
+
+
+http://tuneem.com/tuneem/web/newwebservicesec.php?module=surveyquestion_update&akey=null&userid=4&data=[{"survey_id":"8","sid":"23","response":"B"},{"survey_id":"8","sid":"25","response":"A"}]
+
+
+======> Response
+
+{
+    "message": {
+        "success": "true",
+        "message": "successfully Inserted",
+        "data": {
+            "survey_id": [
+                "8"
+            ]
+        }
+    }
+}
+
+
+======================================================Infonuggets==============================================================================
+
+
+Available infonuggets:-
+
+	data getting from server to mobile.
+
+	http://tuneem.com/tuneem/web/newwebservicesec.php?module=availableinfonuggets&userid=62
+
+
+
+====> Response
+
+	{
+    "message": {
+        "success": "true",
+        "data": {
+            "reinforce": [
+                {
+                    "info_nuggest_id": "13",
+                    "title": "KYC (Know Your Customer)",
+                    "tag": "KYC",
+                    "status": "Allocated",
+                    "f_name": "Video",
+                    "filename": "KYC.mp4",
+                    "path": "uploads/KYC.mp4",
+                    "content": "KYC (Know Your Customer)",
+                    "subject_name": "KYC (Know Your Customer)",
+                    "f_description": "KYC"
+                },
+                {
+                    "info_nuggest_id": "36",
+                    "title": "Dream Smart Plan",
+                    "tag": "Plan",
+                    "status": "Allocated",
+                    "f_name": "PDF",
+                    "filename": "DreamSmartPlan.pdf",
+                    "path": "uploads/DreamSmartPlan.pdf",
+                    "content": "Dream Smart Plan",
+                    "subject_name": "Dream Smart Plan",
+                    "f_description": ""
+                }
+            ]
+        }
+    }
+}
+
+question ===> infonuggetsdetails
+
+
+http://tuneem.com/tuneem/web/newwebservicesec.php?module=infonuggetsdetails&userid=4&id=36
+
+
+
+
+{
+    "message": {
+        "success": "true",
+        "data": {
+            "question": [
+                {
+                    "info_nuggest_id": "36",
+                    "questions_id": "88",
+                    "question": "Which of the following is not a guideline for suggestive selling?",
+                    "num_answers": "4",
+                    "num_correct_ans": "1",
+                    "option_A": "Avoid asking yes-no questions.",
+                    "option_B": "Suggest in specific terms",
+                    "option_C": "Invite guests to visit other areas of the property.",
+                    "option_D": "Be enthusiastic, considerate, and aware of how the sale will benefit the guest.",
+                    "option_E": "",
+                    "max_attempt": "1"
+                }
+            ]
+        }
+    }
+}
+
+
+	Data send to server :-
+
+
+	http://tuneem.com/tuneem/web/newwebservicesec.php?module=infonuggetsupdate_question&akey=null&userid=4&data=[{"re_id":"15","req_id":"33","answer":"B"}]
+
+
+=====>After Response
+		
+
+{
+    "message": {
+        "success": "true",
+        "message": "successfully Updated",
+        "data": [
+            {
+                "infonugget_id": 15,
+                "file_name": null
+            }
+        ]
+    }
+}
+
+
+
+======================================================Data send to server==============================================================================
+
+
+
+offisocio
+
+	likes
+
+
+http://tuneem.com/tuneem/web/newwebservicesec.php?module=add_file_likes&userid=4&data=[{"t_id":"30","likes":"NaN","created_date":"2015-09-01","emp_id":"4"}]
+
+
+	Commands.
+
+http://tuneem.com/tuneem/web/newwebservicesec.php?module=add_file_comment&userid=4&data=[{"t_id":"30","comments":"Hiop","created_date":"2015-09-01","emp_id":"4"}]
+
+
+
+
+
+======================================================================certificate ========================================================================
+
+
+	url    : http://tuneem.com/tuneem/web/newwebservicesec.php
+	module : classcertificate
+	userid : 4
+
+
+{
+    "message": {
+        "success": "true",
+        "data": {
+            "result": [
+                {
+                    "name": "Essaki Training",
+                    "role_name": "user",
+                    "percent": "0.00",
+                    "grade": "average",
+                    "class_name": "Essaki Training"
+                },
+                {
+                    "name": "CRT Algebra Training",
+                    "role_name": "user",
+                    "percent": "0.00",
+                    "grade": "average",
+                    "class_name": "CRT Algebra Training"
+                }
+            ]
+        }
+    }
+}
+
+
+========================================================Employee Speak=============================================================================================
+
+
+Data Send to Server command
+
+
+
+http://tuneem.com/tuneem/web/newwebservicesec.php?module=filetransfer&userid=4&akey=null&data=[{"title" : "vinochandru testing","content"  : "Chandr","filename" : "1435750930621.jpg"}]
+
+
+http://tuneem.com/tuneem/web/mobile_upload.php?filetype=jpg
+
+
+
+Data send from mobile to server.
+
+
+http://tuneem.com/tuneem/web/newwebservicesec.php?module=filetransfer&userid=18&akey=w2-2h4aGTXZGYiRZOiIiKqSE14w4DZPX&data=[{"title" : "Chandru emp testing","content"  : "Content","filename" : "1438584051883.jpg"}]
+
+
+
+http://tuneem.com/tuneem/web/newwebservicesec.php?module=filetransfer&userid=18&akey=w2-2h4aGTXZGYiRZOiIiKqSE14w4DZPX&data=[{"title" : "Chandru testing","content"  : "Good command","filename" : "1438584459331.jpg"}]
+
+
+
+=========================================================leadersetlikes==================================================================================================
+
+
+Data get Response  from server ==> likes
+
+
+	url    : http://tuneem.com/tuneem/web/newwebservicesec.php
+	module : leaderlikes
+	userid : 4
+
+
+
+{"message":{"success":"true","data":[{"t_id":"6","total":"1","likes":"1"},{"t_id":"12","total":"0","likes":"null"},{"t_id":"16","total":"0","likes":"null"}]}}
+
+
+
+Data send to server
+
+
+http://tuneem.com/tuneem/web/newwebservicesec.php?module=leadersetlikes&userid=4&data=[{"t_id":"16","likes":"0","created_date":"2015-09-07","emp_id":"4"}]
+
+
+
+get response from server. comment
+
+http://tuneem.com/tuneem/web/newwebservicesec.php?module=leaderegetcomment&akey=EJ63WXQXzX05wnZhfueVuHqwUIqhajb8&userid=4
+
+
+
+{
+    "message": {
+        "success": "true",
+        "data": {
+            "result": [
+                {
+                    "id": "6",
+                    "t_id": "13",
+                    "emp_id": null,
+                    "EmpName": "AdministratorAdministrator",
+                    "comments": "Bad",
+                    "profileurl": "images/user1.jpg",
+                    "created_date": "2015-08-03 11:23:11"
+                },
+                {
+                    "id": "14",
+                    "t_id": "13",
+                    "emp_id": null,
+                    "EmpName": "AdministratorAdministrator",
+                    "comments": "Leader comment added by venu from portal\r\n",
+                    "profileurl": "images/user1.jpg",
+                    "created_date": "2015-08-04 11:33:42"
+                },
+                {
+                    "id": "19",
+                    "t_id": "15",
+                    "emp_id": null,
+                    "EmpName": "AdministratorAdministrator",
+                    "comments": "Leader comment 2",
+                    "profileurl": "images/user1.jpg",
+                    "created_date": "1970-01-01 00:00:00"
+                },
+                {
+                    "id": "36",
+                    "t_id": "16",
+                    "emp_id": null,
+                    "EmpName": "AdministratorAdministrator",
+                    "comments": "Hi buddy venu test from portal",
+                    "profileurl": "images/user1.jpg",
+                    "created_date": "2015-08-04 14:01:02"
+                }
+            ]
+        }
+    }
+}
+
+
+
+
+	Data send to server. 
+
+	http://tuneem.com/tuneem/web/newwebservicesec.php?module=leadersetcomment&userid=4&t_id=16&comment=One module&cmid=&mode=
+
+
+
+
+==========================================================KPI Tracker Moduel=========================================================================
+
+Data getting from server
+
+
+url : http://tuneem.com/tuneem/web/newwebservicesec.php
+module : remarks
+userid : 4 
+
+
+{
+    "message": {
+        "success": "true",
+        "data": {
+            "result": [
+                {
+                    "id": "1",
+                    "remark_name": "Credit issue with distributor"
+                },
+                {
+                    "id": "2",
+                    "remark_name": "Delayed deliveries of last orders"
+                },
+                {
+                    "id": "3",
+                    "remark_name": "Issue of stock out of fast moving"
+                },
+                {
+                    "id": "4",
+                    "remark_name": "No Remarks"
+                }
+            ]
+        }
+    }
+}
+
+
+
+
+Data send to server 
+
+
+http://tuneem.com/tuneem/web/newwebservicesec.php?module=premiumsales&userid=4&data=[{"bills_cut":"4","values_sold":"6","lines_sold":"20000","comment":"1","created_date":"2015-09-07 17:4:41","emp_id":"4"}]
+
+
+==========================================================Evolution================================================================================================
+
+Data getting from server
+
+
+url : http://tuneem.com/tuneem/web/newwebservicesec.php
+module : modulemaster
+userid : 4 
+
+
+
+{
+    "message": {
+        "success": "true",
+        "data": {
+            "result": [
+                {
+                    "module_id": "34",
+                    "module_name": "Insurance Basic"
+                },
+                {
+                    "module_id": "35",
+                    "module_name": "Sales Process "
+                },
+                {
+                    "module_id": "36",
+                    "module_name": "Product"
+                },
+                {
+                    "module_id": "37",
+                    "module_name": "Referral Process"
+                },
+                {
+                    "module_id": "38",
+                    "module_name": "Objection Handling"
+                },
+                {
+                    "module_id": "39",
+                    "module_name": "Joint Sales Calls"
+                },
+                {
+                    "module_id": "40",
+                    "module_name": "Algebra Module"
+                },
+                {
+                    "module_id": "41",
+                    "module_name": "INS Techj"
+                },
+                {
+                    "module_id": "42",
+                    "module_name": "testing"
+                },
+                {
+                    "module_id": "43",
+                    "module_name": "SB Chandru Module"
+                },
+                {
+                    "module_id": "44",
+                    "module_name": "On Job Training-05-09-2015"
+                }
+            ]
+        }
+    }
+}
+
+
+
+Data send to server 
+
+http://tuneem.com/tuneem/web/newwebservicesec.php?module=evolution&userid=4&data=[{"module_id":"34","comment":"Ghhh"}]
+
+
+Response from server.
+
+{"message":{"success":"true","message":"successfully Inserted"}}
+
+
+
+
+
+=========================================================CRT certificate============================================================================
+
+url : http://tuneem.com/tuneem/web/newwebservicesec.php
+module : classcertificate
+userid : 4 
+
+
+{
+    "message": {
+        "success": "true",
+        "data": {
+            "result": [
+                {
+                    "name": "Essaki Training",
+                    "role_name": "user",
+                    "percent": "0.00",
+                    "grade": "average",
+                    "class_name": "Essaki Training"
+                },
+                {
+                    "name": "CRT Algebra Training",
+                    "role_name": "user",
+                    "percent": "0.00",
+                    "grade": "average",
+                    "class_name": "CRT Algebra Training"
+                }
+            ]
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

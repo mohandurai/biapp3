@@ -1,0 +1,1 @@
+[04-Jul-2015 09:50:30 UTC] PHP Fatal error:  Class 'yii\web\AssetBundle' not found in /home/tuneem/public_html/tuneem/assets/AppAsset.php on line 17

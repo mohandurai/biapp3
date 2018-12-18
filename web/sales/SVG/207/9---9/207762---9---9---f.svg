@@ -1,0 +1,17 @@
+&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;
+&lt;svg id = 'usprovince' onload="showRootChildrenCount(this)" viewBox="-2935 1930 19200 1200" baseprofile="tiny" fill="#7c7c7c" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.3" version="1.2" xmlns="http://www.w3.org/2000/svg"&gt;
+&lt;defs&gt;
+	
+	
+		&lt;inkscape:perspective id="perspective74" inkscape:vp_z="620.84302 : 366.513 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_x="0 : 366.513 : 1" sodipodi:type="inkscape:persp3d" inkscape:persp3d-origin="310.42151 : 244.342 : 1"&gt;
+		&lt;/inkscape:perspective&gt;
+&lt;/defs&gt;
+&lt;sodipodi:namedview inkscape:cy="381.46467" inkscape:cx="89.6583" inkscape:zoom="0.47653255" showgrid="false" guidetolerance="10.0" gridtolerance="10.0" objecttolerance="10.0" bordercolor="#666666" pagecolor="#ffffff" borderopacity="1.0" id="base" inkscape:window-width="1280" inkscape:current-layer="Map_of_the_counties_of_California_x2C__without_legend" inkscape:window-maximized="0" inkscape:window-y="24" inkscape:window-x="55" inkscape:window-height="715" inkscape:pageopacity="0.0" inkscape:pageshadow="2"&gt;
+	&lt;/sodipodi:namedview&gt;
+&lt;g id="_x30_95_Solano" transform="matrix(0.994824,0,0,0.995244,19.02283,-0.871276)"&gt;
+&lt;/g&gt;
+
+~~~~~MARK207762~~~~~
+&lt;path id = "207762" fill="url(#solids207762)" inkscape:connector-curvature="0" sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccccccccccccccccccccc"  stroke="#FFFFFF" stroke-width="1.1376" d="  M393.498,483.667l15.242-0.12l98.014-2.333l5.318-1.313l15.828,14.344l5.537,4.938l2.107,1.803l29.162,26.648l10.682,9.63  l0.139,8.605l0.229,0.938l0.08,0.312l5.141,7.369l5.613,5.252l1.01,2.728l7.617,14.713l4.84,3.454l3.98,2.664l3.975,3.997  l0.457,3.206l0,0l-6.42,6.237l-4.467,3.43l-6.809,4.668l-42.053,1.771l-11.49,0.521l0.148,3.284l-30.955,1.015l-44.473,1.379  l-15.324,1.124l-7.584,1.545l-18.131,0.504l-8.52-0.876l-0.934-1.099l-2.346-0.081l-8.908,0.211l-5.963,8.112l-1.023,3.907  l-6.711-5.647l-0.776-0.463l-0.623-1.175l-0.153-0.626l1.102-2.268l3.6-2.886l0.711-2.492l2.047-6.488l1.668-9.368l-0.229-3.604  l-0.762-8.443l-0.521-10.167l-0.347-17.509l2.032,0.164l-0.721-55.261l-1.467-8.602l0.088-2.339L393.498,483.667"/&gt;
+
+&lt;/svg&gt;

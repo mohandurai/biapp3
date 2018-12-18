@@ -1,0 +1,88 @@
+@font-face {font-family: "DIN Next LT W23 Light";
+  src: url("../fonts/8795e154eac587f055ba93436d06f1bb.eot"); /* IE9*/
+  src: url("../fonts/8795e154eac587f055ba93436d06f1bb.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/8795e154eac587f055ba93436d06f1bb.woff2") format("woff2"), /* chrome、firefox */
+  url("../fonts/8795e154eac587f055ba93436d06f1bb.woff") format("woff"), /* chrome、firefox */
+  url("../fonts/8795e154eac587f055ba93436d06f1bb.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("../fonts/8795e154eac587f055ba93436d06f1bb.svg#DIN Next LT W23 Light") format("svg"); /* iOS 4.1- */
+}
+input{/*font-family:'FontAwesome'; */font-family: "DIN Next LT W23 Light" !important;}
+.form-box .body{border-top-left-radius:4px;border-top-right-radius:4px;}
+.bg-gray{background:none !important;}
+
+
+.form-box .footer{background:none !important;}
+.bg-olive{/*background-color:#762823 !important;  */border: none;
+   background-color: none !important;
+    color: #fff !important;
+    font-weight: bold;
+    background: url('/burgerking/web/images/bkdbtn.svg');}
+    
+    .bg-olive:hover{
+    color: #762823 !important;
+        background-color: none !important;
+    }
+
+.btn{margin:0 auto;color:#fff !important;cursor:pointer !important; font-weight: bold; font-size: 20px;}
+.has-error .help-block, .has-error .control-label, .has-error .radio, .has-error .checkbox, .has-error .radio-inline, .has-error .checkbox-inline, .has-error.radio label, .has-error.checkbox label, .has-error.radio-inline label, .has-error.checkbox-inline label{color:red;font-size:18px;background: #bbb;}
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300);*{box-sizing:border-box;margin:0;padding:0;font-weight:300;}
+
+.wrapper.form-success .container h1{-webkit-transform:translateY(85px);-ms-transform:translateY(85px);transform:translateY(85px);}
+.container{max-width:600px;margin:0 auto;padding:0px 0;text-align:center; font-family: "DIN Next LT W23 Light";}
+.container h1{font-size:40px;-webkit-transition-duration:1s;transition-duration:1s;-webkit-transition-timing-function:ease-in-put;transition-timing-function:ease-in-put;font-weight:200;}
+form{padding:5px 0;position:relative;z-index:2;}
+input{-webkit-appearance:none;-moz-appearance:none;appearance:none;outline:0;border:1px solid rgba(255, 255, 255, 0.4);background-color:rgba(255, 255, 255, 0.2);width:250px;border-radius:3px;padding:10px 15px;margin:0 auto 10px auto;display:block;text-align:left;font-size:17px !important;color:white;-webkit-transition-duration:0.25s;transition-duration:0.25s;font-weight:300;font-family:'FontAwesome'!important;}
+form input:hover{background-color:rgba(255, 255, 255, 0.4);}
+form input:focus{background-color:white;width:100%;}
+form button{-webkit-appearance:none;-moz-appearance:none;appearance:none;outline:0;background-color:white;border:0;padding:10px 15px;color:#53e3a6;border-radius:3px;cursor:pointer;font-size:18px;-webkit-transition-duration:0.25s;transition-duration:0.25s;}
+form button:hover{background-color:#f5f7f9;}
+.header-tun{background-color:#ed7a03;-webkit-box-shadow:0px 9px 12px -7px rgba(0,0,0,0.75);-moz-box-shadow:0px 9px 12px -7px rgba(0,0,0,0.75);box-shadow:0px 9px 12px -7px rgba(0,0,0,0.75);}
+.avatar-logo{border-radius:25px;border-radius:100px;width:90px;height:90px;}
+.form-head-tun{margin-bottom:0%!important;font-size:24px;padding-left:0%;color:#fff;font-weight:bold;}
+
+.lbanner{
+width: 50%;
+    height: 100%;
+background: url('../images/VegWhopper.png') center no-repeat;
+float: left;
+    background-size: 100%;
+box-sizing:border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.form-box{width:50%;/*margin:90px auto 0 auto;*/ /*margin-top:90px;*/float: left; box-sizing:border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+   height: 100%;
+   display: flex;
+    align-items: center;
+
+}
+
+
+.selectopt{position:relative;top:10px;}
+@media screen and (min-width: 376px)
+{
+.wrapper{position:absolute;left:0;bottom:0;top:0;width:100%;overflow:hidden;  background:#ed7801;}
+}
+@media screen and (max-width: 375px) and (min-width: 250px) {
+	#login-form{
+    width: 100%;
+    margin-top: -130px;
+    margin: 0 auto;	
+	}
+	.lbanner{ display: none;}
+.container{
+margin: 0 auto;
+}
+.form-box{width:100%;
+margin: 0 auto;
+/*margin:90px auto 0 auto;border:1px solid #fff;background-color:#fff;-webkit-box-shadow:0px 6px 21px 1px rgba(0,0,0,0.75);
+-moz-box-shadow:0px 6px 21px 1px rgba(0,0,0,0.75);box-shadow:0px 6px 21px 1px rgba(0,0,0,0.75);*/
+}
+.wrapper{background:#ed7801;position:absolute;left:0;bottom:0;top:0;width:100%!important;overflow:hidden;}
+}

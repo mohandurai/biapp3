@@ -1,0 +1,5 @@
+#<IfModule mod_security2.c>
+#	<LocationMatch .*>
+#		SecRuleRemoveById 990011
+#	</LocationMatch>
+#</IfModule>

@@ -1,0 +1,89 @@
+/* header Section */
+.header
+{
+  background: #f9a119 ;
+}
+.header-bottom
+{
+  background: #000;
+}
+/*Sidebar Toggle Navigation */
+#sidebar {
+    background: #d78a13;
+}
+.menu-nav a
+{
+    background: #666;
+    /* background: linear-gradient(#666, #333); */
+    background: linear-gradient(#f9a119 0%,#b36f08 100%);
+    background: -moz-linear-gradient(top, #f9a119 0%,#b36f08 100%);
+    background: -webkit-linear-gradient(linear, left top, left bottom, color-stop(0%,#f9a119), color-stop(100%,#b36f08));
+    background: -webkit-linear-gradient(top, #f9a119 0%,#b36f08 100%);
+    background: -o-linear-gradient(top, #f9a119 0%,#b36f08 100%);
+    background: -ms-linear-gradient(top, #f9a119 0%,#b36f08 100%);
+    background: linear-gradient(to bottom, #f9a119 0%,#b36f08 100%);
+}
+.menu-nav a::after
+{
+background: #666;
+/* background: linear-gradient(135deg, #666, #333); */
+background: linear-gradient(135deg, #f9a119 0%,#b36f08 100%);
+background: -moz-linear-gradient(top, #f9a119 0%,#b36f08 100%);
+background: -webkit-linear-gradient(linear, left top, left bottom, color-stop(0%,#f9a119), color-stop(100%,#b36f08));
+background: -webkit-linear-gradient(top, #f9a119 0%,#b36f08 100%);
+background: -o-linear-gradient(top, #f9a119 0%,#b36f08 100%);
+background: -ms-linear-gradient(top, #f9a119 0%,#b36f08 100%);
+background: linear-gradient(to bottom, #f9a119 0%,#b36f08 100%)
+}
+.period-title
+{
+    background: #f9a119;
+}
+.form-row
+{
+  background: #BBC8E0;
+}
+.period-submin button.apply
+{
+  background: #12161B;
+}
+#myTabs > .nav-tabs li a
+{
+   background: #1D222A;
+  border-right: 1px solid #586477;
+}
+.parent_li
+{
+  border:1px solid #f9a119;
+}
+li.child span
+{
+  border:1px solid #f9a119;
+}
+.combine, .split
+{
+  background: #12161B;
+  color: #5E6C81;
+  border: 1px solid #5E6C81;
+}
+.user-footer a, .content-header a
+{
+  background: #12161B;
+  color: #ffffff;
+}
+.right-side section.content
+{
+  background: #001513;
+}
+.user-header
+{
+  background: #BBC8E0;
+}
+#pselection
+{
+  border: 1px solid #535C6C;
+}
+button.apply:hover
+{
+  background: #D93637;
+}

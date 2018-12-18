@@ -1,0 +1,4 @@
+[26-Jun-2015 10:16:33 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Unknown file: ./composer.json' in /home/tuneem/public_html/tuneem/vendor/ezyang/htmlpurifier/maintenance/add-vimline.php:108
+Stack trace:
+#0 {main}
+  thrown in /home/tuneem/public_html/tuneem/vendor/ezyang/htmlpurifier/maintenance/add-vimline.php on line 108

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Google Maps API - Reachability</title>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <link href="https://google-developers.appspot.com/maps/documentation/javascript/examples/default.css" rel="stylesheet">
+    <style type="text/css">
+      #map_canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+
+      #canvas {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        background-color: rgba(0,0,0,0.5);
+      }
+
+<script>
+
+</script>
+
+
+  </style>
+  </head>
+  <body>
+    <div id="map_canvas"></div>
+    <img id="canvas" />
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWN1D6LyQlKiP63eBS3Mi4HZb8n1bBDlk&callback=myMap&amp;libraries=places&amp;sensor=false">
+      </script>
+    <script src="../dist/svgoverlay.js"></script>
+    <script>
+         var myStyle =
+[
+
+
+                        {stylers: [ {"visibility": "on" } ] },
+
+                        {
+                        featureType: "all",
+                        stylers: [
+                        { visibility: "off" }
+                        ]
+                        },
+
+                        {
+                        featureType: "road",
+                        elementType: "labels",
+                        stylers: [
+                        { visibility: "off" }
+                        ]
+                        },
+
+                        {
+                        featureType: "administrative",
+                        elementType: "labels",
+                        stylers: [
+                        { visibility: "off" }
+                        ]
+                        },
+                        {
+                        featureType: "poi",
+                        elementType: "labels",
+                        stylers: [
+                        { visibility: "off" }
+                        ]
+                        },{
+                        featureType: "water",
+                        elementType: "labels",
+                        stylers: [
+                        { visibility: "off" }
+                        ]
+                        },{
+                        featureType: "road",
+                        elementType: "labels",
+                        stylers: [
+                        { visibility: "off" }
+                        ]
+                        },
+
+
+                        {
+                          featureType: "road.highway",
+                          elementType: "geometry",
+                          stylers: [
+                        { visibility: "off"
+                        }]
+                        },
+                        {
+
+
+
+                        featureType: 'poi.business',
+                        stylers: [
+                        {visibility: 'off'
+                        }]
+
+                        },
+
+                        {
+                        featureType: 'transit',
+                        elementType: 'labels.icon',
+                        stylers: [{visibility: 'off'}]
+                        },
+                        {
+                        featureType: 'water',
+                        elementType: 'geometry',
+                        stylers: [{visibility: 'off'}]
+                        },
+                        {
+                        featureType: "poi.park",
+                        elementType: "geometry",
+                        stylers: [
+                        { visibility: "off" }
+                        ]
+                        },
+];
+      var map = new google.maps.Map(document.getElementById('map_canvas'), {
+        zoom: 2,
+        center: new google.maps.LatLng(12.9716, 77.5946),
+        // mapTypeId: google.maps.MapTypeId.ROADMAP
+        mapTypeControlOptions: {
+        //   mapTypeIds: ['mystyle', google.maps.MapTypeId.ROADMAP, google.maps.MapTypeId.HYBRID]
+        mapTypeIds: ['mystyle', google.maps.MapTypeId.ROADMAP, google.maps.MapTypeId.HYBRID]
+        },
+         mapTypeId: 'mystyle',
+      });
+       map.mapTypes.set('mystyle', new google.maps.StyledMapType(myStyle, { name: 'Hide' }));
+       // map.mapTypes.set('mystyle1', new google.maps.StyledMapType(myStyle1, { name: 'Map' }));
+         directionsDisplay = new google.maps.DirectionsRenderer({
+          draggable: true,
+          map: map,
+          panel: document.getElementById('right-panel')
+        });
+      var xmlhttp = new XMLHttpRequest();
+      xmlhttp.open('GET', 'in.svg', false);
+      xmlhttp.send();
+
+
+      var overlay = new SvgOverlay({
+        content: xmlhttp.responseText,
+        map: map
+      });
+
+      var svg = overlay.getSvg();
+
+      svg.setAttribute('opacity', 0.5);
+      console.log('overlay.getContainer()');
+      tes = overlay.getContainer();
+      
+      function paint(){
+
+        var rule, color, elems, i,
+          colors = {
+            '1. High income: OECD': '#F00',
+            '2. High income: nonOECD': '#F90',
+            '3. Upper middle income': '#FF0',
+            '4. Lower middle income': '#0CF',
+            '5. Low income': '#00F'
+          };
+
+        for (rule in colors){
+          elems = svg.querySelectorAll('path[data-income-grp="' + rule + '"]');
+          color = colors[rule];
+
+          for (i = 0; i < elems.length; i++){
+            elems[i].setAttribute('fill', color);
+
+          }
+        }
+
+      }
+//       function handler(ev) {
+//     var target = $(ev.target);
+//     var elId = target.attr('id');
+//     if( target.is("path") ) {
+//        alert('The mouse was over'+ elId );
+//     }
+// }
+
+
+
+$('body').on('click', 'svg.indiastates', function() {
+  // alert('asd');
+    // do something
+});
+// map.addListener('click', function(event) {
+
+//           // To find Aerial distance and distance  add marker
+//           //removeAllcircles();
+//           console.log('event');
+//           console.log(event);
+//           alert('sdfs');
+//            if($("#markeropt").val()!=0)
+//            {
+
+//              if($("#markeropt").val()!=0 && $("#markeropt").val()==1 && markerarr.length<2)
+//               {
+
+//                 placeMarker(event.latLng);
+
+//               }
+//               else if(($("#markeropt").val()==2))
+//              {
+
+//                 placeMarker(event.latLng);
+
+//              }
+
+
+//            }
+//        });
+// $('body').find("svg #indiastates").mouseleave(handler);
+      paint();
+      // console.log(svg);
+      // console.log('svg');
+    </script>
+  </body>
+</html>
+
+<script>
+        // var img = document.getElementById('canvas');
+
+      // if($('body').find('#IND2431').length){
+      // alert("Div1 exists");
+      // }else{
+      // alert("Div1 does not exists");
+      // }
+      // window.onload = mysvgfuncio();
+      // function mysvgfuncio()
+      // {
+      //   // var a = document.getElementById("indiastates");
+      //   // // // Get the SVG document inside the Object tag
+      //   // var svgDoc = a.contentDocument;
+      //   // // // Get one of the SVG items by ID;
+      //   // // var svgItem = svgDoc.getElementById("IND2446");
+      //   // console.log(a);
+      //   alert('sd');
+      // }
+
+
+
+        function showRootChildrenCount(e) 
+        {
+          // console.log(e.id);
+          // alert(e.id);
+          // // console.log();
+          // // e.getElementById('IND3263').addEventListener("click", testclick); 
+          // alert("Total Children: "+document.documentElement.childNodes.length); 
+          // console.log( e.getElementById('IND3263'));
+          // e.getElementById('IND3263').mouseenter(function(){
+          // alert("You entered p1!");
+          // });
+
+
+
+          // document.querySelector('svg').addEventListener('load',function(){
+          //   var p = this.contentDocument.documentElement.querySelectorAll('path');
+          //   for(i=0;i<p.length;i++){
+          //   p[i].addEventListener('click', function(){ 
+          //   alert("Hello my name is "+this.id);
+          //   if(this.id=='IND2446') {
+          //   alert("This is  Karnataka State");
+          //   }
+
+          //   });
+          //   }
+          // });
+
+
+
+
+        }
+        function testclick()
+        {
+          // alert('i am clicked');
+        }
+
+        function findmyids()
+        {
+          alert('i m');
+        }
+        //.find('path').length)
+        console.log('tes');
+        yt = tes.closest('div');
+        // yt1 = yt.find(yt);
+        //x.getElementsByTagName("p")
+        // console.log(yt.getElementsByTagName("path"));
+        tt = yt.getElementsByTagName("path");
+        // console.log(tt[0]);
+        // tt[0].addListener('click', function() {
+        //   map.setZoom(8);
+        //   map.setCenter(marker.getPosition());
+        //   console.log(tt[0]);
+        // });
+        var element = yt.getElementsByClassName("lea");
+        // element.onclick = function(e) {
+        //   e.stopPropagation()
+        //  alert('sdfsddfs');
+        // }onclick = 'showRootChildrenCount(this)'
+        console.log('fghj')
+        // console.log($('body').find('path#IND2446'));
+$("body").on("click", "path", function(){
+    alert($(this).attr('id'));
+});
+// document.getElementsById("IND2446").addEventListener("click",captureOnClickA, true);
+// function captureOnClickA(e){
+//   e.stopPropagation();
+//     // el.innerHTML += "DIV event capture<br>";
+//     alert('ds');
+//     console.lgo('ds');
+// }
+                // document.addEventListener("click", function(){
+//     document.getElementById("demo").innerHTML = "Hello World";
+// });
+  </script>

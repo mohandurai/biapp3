@@ -1,0 +1,522 @@
+<?php
+ini_set('display_errors', 'Off');
+ini_set('display_startup_errors', 'Off');
+error_reporting(0);
+?>
+
+
+<html>
+  <head>
+    <title>Tree Multiselect test</title>
+
+    <meta charset="UTF-8">
+
+    <style>
+      * {
+        font-family: sans-serif;
+        font-size:13px;
+      }
+  
+    </style>
+    <link rel="stylesheet" href="jquery.tree-multiselect.min.css">
+     <link rel="stylesheet" href="//static.jstree.com/3.2.1/assets/dist/themes/default/style.min.css">
+
+    <script src="jquery-1.11.3.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="jquery.tree-multiselect.js"></script>
+   <script src="//static.jstree.com/3.2.1/assets/dist/jstree.js"></script>
+    <script type="text/javascript">
+      $("document").ready(function() {
+        
+         
+        $(".selected").hide();
+
+        $("#combine").click(function(e) { 
+            //alert("ZZZZZZZZZZZ");
+            $("#com-split").show();
+        });
+
+        $("#split").click(function(e) { 
+            
+            $("#com-split").show();
+        });
+
+        $("div.tree-multiselect, input.search").click(function() {
+             
+              $('#showSelected').attr('checked', false);
+              $('#showSelected1').attr('checked', false);
+        });
+
+     
+      });
+ function combsplit(){
+            
+            var cnt = $("#test-select-3 option:selected").length;
+            if(cnt==0) {
+              alert("Select some Category !!!");
+              return false;
+            }
+            //var url3 = document.referrer;
+            var filts = "";
+            var tableid = "";
+            var menuids ="";
+            $("#test-select-3 option:selected").each(function() {
+               var aa = $(this).attr('master');
+               var tblid = $(this).attr('table');
+                var levelid = $(this).attr('level');
+               var menuid = $(this).val();
+              
+               filts = filts + aa + "_";
+               tableid = tableid + tblid + "_";
+               menuids =menuids + menuid + "_";
+            });
+            // alert(tableid);
+            finfit = filts.slice(0,-1);
+            tableid = tableid.slice(0,-1);
+             menuids = menuids.slice(0,-1);
+            var tblss = tableid.split("_");
+            var unique = tblss.filter(function(elem, index, self) {
+            return index == self.indexOf(elem);
+            })
+            tableid = unique.toString();
+
+
+            var radioValue = $("input[name='combsplit']:checked"). val();
+            var finstr = finfit + "&comb=" + radioValue + "&tbl=" +tableid + "&categs="+menuids;
+   parent.hello(finstr);
+            
+         }
+         function combsplit1(item){
+            
+            var cnt = $("#test-select-3 option:selected").length;
+            if(cnt==0) {
+              alert("Select some Category !!!");
+              return false;
+            }
+            //var url3 = document.referrer;
+            var filts = "";
+            var tableid = "";
+            var menuids ="";
+            $("#test-select-3 option:selected").each(function() {
+               var aa = $(this).attr('master');
+               var tblid = $(this).attr('table');
+                var levelid = $(this).attr('level');
+               var menuid = $(this).val();
+              
+               filts = filts + aa + "_";
+               tableid = tableid + tblid + "_";
+               menuids =menuids + menuid + "_";
+            });
+            // alert(tableid);
+            finfit = filts.slice(0,-1);
+            tableid = tableid.slice(0,-1);
+             menuids = menuids.slice(0,-1);
+            var tblss = tableid.split("_");
+            var unique = tblss.filter(function(elem, index, self) {
+            return index == self.indexOf(elem);
+            })
+            tableid = unique.toString();
+
+
+            var radioValue = $("input[name='combsplit']:checked"). val();
+            var finstr = finfit + "&comb=" + radioValue + "&tbl=" +tableid + "&categs="+menuids+"&combby="+item;
+            parent.hello(finstr);
+            
+         }
+    </script> 
+  </head>
+
+  <body>
+
+<?php
+
+  
+  $parurl = $_SERVER['HTTP_REFERER'];
+  $query_str = parse_url($parurl, PHP_URL_QUERY);
+  parse_str($query_str, $query_params);
+  $checked = explode("_",$query_params['categs']);
+
+  $comb = explode("_",$query_params['comb']);
+  
+ 
+
+include("db.php");
+
+
+if($query_params['r']=='site/marketingpotential') {
+  $categ = 1;
+} elseif ($query_params['r']=='site/secondarysales') {
+  $categ = 2;
+}
+
+$conn = mysqli_connect($host, $username, $password) or die(mysqli_error());  
+$db = mysqli_select_db($conn, $dbname) or die (mysqli_error());  
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+$sql = "SELECT max(level) as low2 FROM bi_menus where active=1 and category=".$categ;
+$result = $conn->query($sql);
+$row = $result->fetch_assoc();
+$curlev = $row['low2']; 
+
+ 
+
+
+$sql3 = "select id, title,tblrowid,tblid,levelid from bi_menus where parent_id=0 and category= " . $categ ." and id NOT IN (SELECT DISTINCT parent_id FROM `bi_menus` where parent_id !=0)";
+
+
+$result3 = $conn->query($sql3);
+
+echo '<select id="test-select-3" multiple="multiple">';
+
+while($row3 = $result3->fetch_assoc()) {
+  
+  $sql3a = "SELECT id, title,tblrowid,tblid,levelid FROM bi_menus where active=1 and category= " . $categ ." and id=".$row3['id'];
+  $result3a = $conn->query($sql3a);
+  $row3a = $result3a->fetch_assoc();
+ 
+  $ee = "";
+  foreach($checked as $cc) {
+    if($cc==$row3a["id"]) {
+      echo "<option value='".$row3a["id"]."' selected='selected' level='".$row3a["levelid"]."'  master='".$row3a["tblrowid"]."' table='".$row3a["tblid"]."'>".$row3a["title"]."</option>";
+      $ee = "Yes";
+      continue;
+    } 
+  }
+
+  if($ee!="Yes") {
+    echo "<option value='".$row3a["id"]."'  master='".$row3a["tblrowid"]."'  level='".$row3a["levelid"]."' table='".$row3a["tblid"]."'>".$row3a["title"]."</option>";
+  }
+
+}
+
+for($cc=2; $cc<=$curlev; $cc++)
+{
+
+
+
+    $sql2 = "SELECT id, title, parent_id, level,tblrowid,tblid,levelid FROM bi_menus where active=1 and category= " . $categ ." and level=".$cc;
+    $result2 = $conn->query($sql2);
+
+    
+
+    $datasec="";
+
+    if ($result2->num_rows > 0) {
+        // output data of each row
+        while($row2 = $result2->fetch_assoc()) {
+         
+
+              $sql3 = "SELECT id, title, parent_id,tblrowid,tblid,levelid FROM bi_menus where category= " . $categ ." and id=".$row2["parent_id"];
+              $result3 = $conn->query($sql3);
+              $row3 = $result3->fetch_assoc();
+              if($cc==2) {
+
+                $sql3b = "SELECT count(*) as cnt FROM bi_menus where id IN (SELECT DISTINCT parent_id FROM `bi_menus` where parent_id !=0) and category= " . $categ ." and id=".$row2["id"];
+                //echo $sql3b . "</br>";
+                $result3b = $conn->query($sql3b);
+                $row3b = $result3b->fetch_assoc();
+                if($row3b['cnt'] > 0) { continue; }
+                else {
+                $datasec = "";
+                $datasec = $row3['title'];
+
+                  $ff = "";
+                  foreach($checked as $ef) {
+                    if($ef==$row2["id"]) {
+                      echo "<option value='".$row2["id"]."' data-section='".$datasec."' table='".$row2["tblid"]."' master='".$row2["tblrowid"]."'  level='".$row2["levelid"]."' selected='selected'>".$row2["title"]."</option>";
+                      $ff = "Yes";
+                      continue;
+                    } 
+                  }
+
+                  if($ff!="Yes") {
+                    echo "<option value='".$row2["id"]."' data-section='".$datasec."' table='".$row2["tblid"]."'  level='".$row2["levelid"]."' master='".$row2["tblrowid"]."'>".$row2["title"]."</option>";
+                  }
+                
+               
+                 
+
+               }
+
+              } elseif($cc==3) {
+                $datasec = "";
+                $sql3 = "SELECT id, title, parent_id,tblrowid,tblid,levelid FROM bi_menus where category= " . $categ ." and id=".$row2["parent_id"];
+                $result3 = $conn->query($sql3);
+                $row3 = $result3->fetch_assoc();
+
+                $sql4 = "SELECT id, title,tblrowid,tblid,levelid FROM bi_menus where category= " . $categ ." and id=".$row3["parent_id"];
+                $result4 = $conn->query($sql4);
+                $row4 = $result4->fetch_assoc();
+
+                $datasec .= $row4['title']."/".$row3['title'];
+               
+
+                  $gg = "";
+                  foreach($checked as $eg) {
+                    if($eg==$row2["id"]) {
+                      echo "<option value='".$row2["id"]."' data-section='".$datasec."'  table='".$row2["tblid"]."' master='".$row2["tblrowid"]."'  level='".$row2["levelid"]."' selected='selected'>".$row2["title"]."</option>";
+                      $gg = "Yes";
+                      continue;
+                    } 
+                  }
+
+                  if($gg!="Yes") {
+                    echo "<option value='".$row2["id"]."' data-section='".$datasec."' table='".$row2["tblid"]."'  level='".$row2["levelid"]."' master='".$row2["tblrowid"]."'>".$row2["title"]."</option>";
+                  }
+
+
+              }
+
+
+              elseif($cc==4) {
+                $datasec = "";
+                $sql3 = "SELECT id, title, parent_id,tblrowid,tblid,levelid FROM bi_menus where category= " . $categ ." and id=".$row2["parent_id"];
+                $result3 = $conn->query($sql3);
+                $row3 = $result3->fetch_assoc();
+
+                $sql4 = "SELECT id, title,tblrowid,tblid FROM bi_menus where category= " . $categ ." and id=".$row3["parent_id"];
+                $result4 = $conn->query($sql4);
+                $row4 = $result4->fetch_assoc();
+
+                $datasec .= $row4['title']."/".$row3['title'];
+              
+
+                  $gg = "";
+                  foreach($checked as $eg) {
+                    if($eg==$row2["id"]) {
+                      echo "<option value='".$row2["id"]."' data-section='".$datasec."' table='".$row2["tblid"]."'  level='".$row2["levelid"]."' master='".$row2["tblrowid"]."' selected='selected'>".$row2["title"]."</option>";
+                      $gg = "Yes";
+                      continue;
+                    } 
+                  }
+
+                  if($gg!="Yes") {
+                    echo "<option value='".$row2["id"]."' data-section='".$datasec."' table='".$row2["tblid"]."'  level='".$row2["levelid"]."' master='".$row2["tblrowid"]."'>".$row2["title"]."</option>";
+                  }
+
+
+              }
+            
+
+        }
+    } else {
+        echo "0 results";
+    }
+
+}
+
+$conn->close();
+
+?>
+
+</select>
+
+    <script type="text/javascript">
+        $("#test-select-3").treeMultiselect({ enableSelectAll: true, sortable: true, searchable: true, startCollapsed: true
+ });
+    </script>
+
+    </br>
+    <input type="hidden" id='showurl' />
+  
+<div id ="jstree" style=" width: 300px;
+  height: 300px;font-size: 14px; color: white; font-weight: bold;"> </div>
+ 
+<div id="com-split" style="height:500px; margin-left: 30px; font-size: 14px; color: white; font-weight: bold;">  
+
+ 
+<?php
+if(isset($query_params['comb'])) {
+
+  $radval = $query_params['comb'];  
+  $item = $query_params['combby'];  
+ ?>
+    <script>
+
+    function combdata(flg){
+
+     
+     $("#test-select-3 option:selected").each(function() {
+             
+                levelid1 = $(this).attr('level');
+
+               
+             });
+       $.ajax({
+
+                                          type: 'POST',
+                                          url: '../sales/getstate.php',
+                                          data: {'levelview':'levelview','level':levelid1,"flag":flg},
+                                          
+
+                                          success: function (response) {
+
+                                           
+                                              $("#jstree").html('');
+                                          $("#jstree").css("display", "block");
+                                           $("#jstree").removeAttr("class role aria-multiselectable tabindex aria-activedescendant aria-busy");
+                                             $('#jstree').jstree({
+  'plugins': ['search', 'radiobutton', 'wholerow'],
+  'core': {
+    'data': eval(response),
+    'animation': true,
+    'expand_selected_onload': true,
+    'themes': {
+      'icons': false,
+    }
+  },
+  'search': {
+    'show_only_matches': true,
+    'show_only_matches_children': true
+  }
+});
+    
+                            
+                                          }
+
+                                          });
+    }
+
+    
+    </script>
+   <?php  if($radval==0){
+    ?><script>combdata("C"); 
+
+    </script>
+ <?php }elseif($radval==1){
+
+
+?>
+<script>combdata("S");</script>
+<?php } ?>
+    <input id="showSelected" name="combsplit" type="radio" value="0" <?php if($radval==0) echo "checked='checked'"; ?> > Combine </input></br>
+    <input id="showSelected1" name="combsplit" type="radio" value="1" <?php if($radval==1) echo "checked='checked'"; ?> > Split </input></br></br>
+<?php
+}else {
+?>
+
+  <input id="showSelected" name="combsplit" type="radio" value="0"> Combine </input></br>
+  <input id="showSelected1" name="combsplit" type="radio" value="1"> Split </input></br></br>
+
+<?php
+}
+?>
+  
+</div>
+<script>
+$("document").ready(function(){
+
+
+$("#jstree").css("display", "none");
+var levelid1var;
+ $("#showSelected").click(function(e) {  
+   $("#test-select-3 option:selected").each(function() {
+             
+                levelid1 = $(this).attr('level');
+               
+             });
+   $.ajax({
+
+                                          type: 'POST',
+                                          url: '../sales/getstate.php',
+                                          data: {'levelview':'levelview','level':levelid1,"flag":"C"},
+                                          
+
+                                          success: function (response) {
+
+                                            if(response == "")
+                                            {
+                                                      combsplit();
+                                            }
+                                              $("#jstree").html('');
+                                           $("#jstree").css("display", "block");
+                                           $("#jstree").removeAttr("class role aria-multiselectable tabindex aria-activedescendant aria-busy");
+                                             $('#jstree').jstree({
+  'plugins': ['search', 'radiobutton', 'wholerow'],
+  'core': {
+    'data': eval(response),
+    'animation': true,
+    'expand_selected_onload': true,
+    'themes': {
+      'icons': false,
+    }
+  },
+  'search': {
+    'show_only_matches': true,
+    'show_only_matches_children': true
+  }
+});
+    $('#jstree').on('changed.jstree', function (e, data) {
+  var objects = data.instance.get_selected(true)
+  var leaves = $.grep(objects, function (o) { return data.instance.is_leaf(o) })
+    $.each(leaves, function (i, o) {
+    
+    combsplit1(o.id);
+  })
+})                                         
+                                  
+                                          }
+
+                                          });
+  $("#jstree").css("display", "block");
+
+  });
+ $("#showSelected1").click(function(e) {  
+   $("#test-select-3 option:selected").each(function() {
+             
+                levelid1 = $(this).attr('level');
+               
+             });
+   $.ajax({
+
+                                          type: 'POST',
+                                          url: '../sales/getstate.php',
+                                          data: {'levelview':'levelview','level':levelid1,"flag":"S"},
+                                          
+
+                                          success: function (response) {
+                                            if(response == "")
+                                            {
+                                                      combsplit();
+                                            }
+                                            $("#jstree").html('');
+                                            $("#jstree").removeAttr("class role aria-multiselectable tabindex aria-activedescendant aria-busy");
+  $("#jstree").css("display", "block");
+                                           
+                                             $('#jstree').jstree({
+  'plugins': ['search', 'radiobutton', 'wholerow'],
+  'core': {
+    'data': eval(response),
+    'animation': true,
+    'expand_selected_onload': true,
+    'themes': {
+      'icons': false,
+    }
+  },
+  'search': {
+    'show_only_matches': true,
+    'show_only_matches_children': true
+  }
+});
+                     $('#jstree').on('changed.jstree', function (e, data) {
+  var objects = data.instance.get_selected(true)
+  var leaves = $.grep(objects, function (o) { return data.instance.is_leaf(o) })
+  
+   $.each(leaves, function (i, o) {
+  
+    combsplit1(o.id);
+  })
+})                     
+
+    }
+ });
+
+  });
+     
+});
+</script>
+
+</body>
+</html>

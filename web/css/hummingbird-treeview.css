@@ -1,0 +1,40 @@
+.hummingbird-treeview,
+.hummingbird-treeview *
+{
+    list-style: none;
+    font-size: 12px;
+    line-height: 24px;
+    border-radius: 0;
+    border: none;
+    margin: 0;
+}
+.hummingbird-base
+{
+  margin: 0;
+  padding: 0;
+}
+#treeview_container
+{
+    max-height: 500px;
+    overflow-y: auto;
+}
+.hummingbird-treeview label {
+    font-weight: normal;
+}
+
+
+.hummingbird-treeview input[type=checkbox] {
+    width : 16px;
+    height :16px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.hummingbird-treeview ul:not(.hummingbird-base) {
+    display: none;
+}
+
+.hummingbird-treeview .fa {
+    font-style: normal;
+    cursor: pointer;
+}

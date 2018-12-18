@@ -1,0 +1,2 @@
+[26-Jun-2015 10:16:40 UTC] PHP Warning:  shell_exec() has been disabled for security reasons in /home/tuneem/public_html/tuneem/vendor/ezyang/htmlpurifier/benchmarks/ConfigSchema.php on line 6
+[26-Jun-2015 10:16:40 UTC] PHP Fatal error:  Call to undefined function xdebug_memory_usage() in /home/tuneem/public_html/tuneem/vendor/ezyang/htmlpurifier/benchmarks/ConfigSchema.php on line 10

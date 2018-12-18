@@ -1,0 +1,22 @@
+.jsPanel-theme-primary, .widget-tittle, .report-header
+{
+	background-color: #535C6C !important;
+}
+body{background: #1a1f26}
+
+.modal-header
+{
+	background-color: #535C6C
+}
+#slider1, #slider2
+{
+	background: #535C6C;
+}
+.btn-default
+{
+	background: #12161B;
+}
+.ui-autocomplete-input
+{
+	border: 1px solid #535C6C;
+}

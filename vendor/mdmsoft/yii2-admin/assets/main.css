@@ -1,0 +1,51 @@
+body {
+    padding-top: 70px;
+}
+
+.footer {
+    /*border-top: 1px solid #ddd;
+    margin-top: 30px;
+    padding: 15px 0 30px;*/
+    height: 50px;
+background-color: #ffcc00;
+border-top: 3px solid #ddd;
+padding-top: 10px;
+}
+
+.navbar-brand {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-inverse{
+/*background-color: #ffcc00 !important;*/
+}
+
+#w3 > li > a{
+color: #fff !important;
+font-weight: bold !important;
+/*background-color: #ff0000 !important;*/
+}
+
+#w1 > li > a{
+color: #fff !important;
+font-weight: bold !important;
+background-color: #ff0000 !important;
+}
+
+.bot{
+padding-bottom: 50px;
+}
+
+.logo{
+  text-align: center;
+  padding: 0 10px;
+  width: 220px;
+  width: 260px;
+  font-family: 'Kaushan Script', cursive;
+  /* font-weight: 500; */
+  height: 50px;
+  display: block;
+  background: url('rsa.gif') 50% 50% no-repeat; 
+  background-size: 180px;
+}

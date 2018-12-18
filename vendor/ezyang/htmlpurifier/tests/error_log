@@ -1,0 +1,5 @@
+[26-Jun-2015 10:16:42 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Please create a test-settings.php file by copying test-settings.sample.php and configuring accordingly' in /home/tuneem/public_html/tuneem/vendor/ezyang/htmlpurifier/tests/common.php:40
+Stack trace:
+#0 /home/tuneem/public_html/tuneem/vendor/ezyang/htmlpurifier/tests/multitest.php(32): require_once()
+#1 {main}
+  thrown in /home/tuneem/public_html/tuneem/vendor/ezyang/htmlpurifier/tests/common.php on line 40

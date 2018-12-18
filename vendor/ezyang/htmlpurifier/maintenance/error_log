@@ -1,0 +1,8 @@
+[26-Jun-2015 10:16:30 UTC] PHP Warning:  shell_exec() has been disabled for security reasons in /home/tuneem/public_html/tuneem/vendor/ezyang/htmlpurifier/maintenance/generate-standalone.php on line 124
+[26-Jun-2015 10:16:35 UTC] PHP Warning:  shell_exec() has been disabled for security reasons in /home/tuneem/public_html/tuneem/vendor/ezyang/htmlpurifier/maintenance/generate-standalone.php on line 124
+[26-Jun-2015 10:16:36 UTC] PHP Warning:  passthru() has been disabled for security reasons in /home/tuneem/public_html/tuneem/vendor/ezyang/htmlpurifier/maintenance/flush.php on line 17
+[26-Jun-2015 10:16:36 UTC] PHP Warning:  passthru() has been disabled for security reasons in /home/tuneem/public_html/tuneem/vendor/ezyang/htmlpurifier/maintenance/flush.php on line 17
+[26-Jun-2015 10:16:36 UTC] PHP Warning:  passthru() has been disabled for security reasons in /home/tuneem/public_html/tuneem/vendor/ezyang/htmlpurifier/maintenance/flush.php on line 17
+[26-Jun-2015 10:16:36 UTC] PHP Warning:  passthru() has been disabled for security reasons in /home/tuneem/public_html/tuneem/vendor/ezyang/htmlpurifier/maintenance/flush.php on line 17
+[26-Jun-2015 10:16:36 UTC] PHP Warning:  passthru() has been disabled for security reasons in /home/tuneem/public_html/tuneem/vendor/ezyang/htmlpurifier/maintenance/flush.php on line 17
+[26-Jun-2015 10:16:36 UTC] PHP Fatal error:  Call to undefined function xmlrpc_encode_request() in /home/tuneem/public_html/tuneem/vendor/ezyang/htmlpurifier/maintenance/update-freshmeat.php on line 54

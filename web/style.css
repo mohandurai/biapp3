@@ -1,0 +1,196 @@
+
+.modal-dialog{
+margin-right: 0;
+}
+.modal-content{
+background:#d5d9d8;
+border-radius: 0;
+}
+.modal-footer{
+border-top: none;
+padding-right:30px;
+}
+.panel{
+border:none;
+border-radius: 0;
+background:#b0b6b8;
+box-shadow: 0 1px 1px rgba(0, 0, 0, 5);
+color: #fff;
+font-weight: bold;
+}
+.panel-body{
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+.text-muted{
+color: #715d49;
+font-weight: bold;
+padding-top: 17px;
+}
+.imgbot{
+margin-bottom:10px;
+}
+.content {
+/*padding: 50px 15px 0px 15px !important;*/
+}
+table[Attributes Style] {
+    direction: ltr;
+    unicode-bidi: embed;
+    -webkit-margin-start: auto;
+    -webkit-margin-end: auto;
+    border-spacing: 0px;
+}
+user agent stylesheettable {
+    white-space: normal;
+    line-height: normal;
+    font-weight: normal;
+    font-size: medium;
+    font-variant: normal;
+    font-style: normal;
+    color: -webkit-text;
+    text-align: start;
+}
+user agent stylesheettable {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+@font-face {
+	font-family: 'Audi_Normal';
+	font-size:12px;
+	src: url('./web/manpower/charts/44/fonts/AudiTypeV01-Normal.eot');
+	src: local('?'), url("./web/manpower/charts/44/fonts/AudiTypeV01-Normal.otf") format("opentype"), url('./web/manpower/charts/44/fonts/AudiTypeV01-Normal.woff') format('woff'), url('./web/manpower/charts/44/fonts/AudiTypeV01-Normal.ttf') format('truetype'), url('./web/manpower/charts/44/fonts/AudiTypeV01-Normal.svg') format('svg');
+}
+.google-visualization-orgchart-table {
+  border: 0;
+  text-align: center;
+  font-family: Sans-Serif, 'Audi_Normal'!important;
+}
+
+.google-visualization-orgchart-table * {
+  margin: 0;
+  padding:8px;
+}
+
+.google-visualization-orgchart-space-small {
+  width: 4px;
+  height: 1px;
+  border: 0;
+}
+
+.google-visualization-orgchart-space-medium {
+  width: 10px;
+  height: 1px;
+  border: 0;
+}
+
+.google-visualization-orgchart-space-large {
+  width: 16px;
+  height: 1px;
+  border: 0;
+}
+
+.google-visualization-orgchart-noderow-small {
+  height: 12px;
+  border: 0;
+}
+
+.google-visualization-orgchart-noderow-medium {
+  height: 30px;
+  border: 0;
+}
+
+.google-visualization-orgchart-noderow-large {
+  height: 46px;
+  border: 0;
+}
+
+.google-visualization-orgchart-connrow-small {
+  height: 2px;
+  font-size: 1px;
+}
+
+.google-visualization-orgchart-connrow-medium {
+  height: 6px;
+  font-size: 4px;
+}
+
+.google-visualization-orgchart-connrow-large {
+  height: 10px;
+  font-size: 8px;
+}
+
+.google-visualization-orgchart-node {
+  text-align: center;
+  vertical-align: middle;
+  /*font-family: arial,helvetica, 'AudiTypeV01-Normal';*/
+  font-family: Sans-Serif, 'Audi_Normal';
+  cursor: default;
+  /*border: 2px solid #b5d9ea;*/
+  /*-moz-border-radius: 5px;
+  -webkit-border-radius: 5px;*/
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 3px!important;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 3px!important;
+  background-color: #b0b6b8!important;
+  background: #b0b6b8!important;
+  color:#000!important;
+  width:140px;
+  height:80px;
+}
+
+/*.google-visualization-orgchart-nodesel {
+  border: 2px solid #e3ca4b;
+  background-color: #fff7ae;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff7ae), to(#eee79e));
+}*/
+
+.google-visualization-orgchart-node-small {
+  font-size: 0.6em;
+}
+
+.google-visualization-orgchart-node-medium {
+  font-size: 11px;
+}
+
+.google-visualization-orgchart-node-large {
+  font-size: 1.0em;
+  font-weight: bold;
+}
+
+.google-visualization-orgchart-linenode {
+  border: 0;
+}
+
+.google-visualization-orgchart-lineleft {
+  border-left: 1px solid #3388dd;
+}
+
+.google-visualization-orgchart-lineright {
+  border-right: 1px solid #3388dd;
+}
+
+.google-visualization-orgchart-linebottom {
+  border-bottom: 1px solid #3388dd;
+}
+.org-circle
+{
+  border-radius:10px; 
+  background-color:rgba(255, 165, 0, 0.65);
+  border:1px solid gray;
+  float:right;
+  padding:3px 6px 3px 6px;
+  position: relative;
+    /*top: 17px;
+    left: -55px;*/
+}
+.org-circle-red{
+background:#ff0000;
+color: #fff;
+}
+@font-face {
+	font-family: Audi_Normal;
+	font-size:12px;
+	src: url('web/manpower/charts/44/fonts/AudiTypeV01-Normal.eot');
+	src: local('?'), url("web/manpower/charts/44/fonts/AudiTypeV01-Normal.otf") format("opentype"), url('web/manpower/charts/44/fonts/AudiTypeV01-Normal.woff') format('woff'), url('web/manpower/charts/44/fonts/AudiTypeV01-Normal.ttf') format('truetype'), url('web/manpower/charts/44/fonts/AudiTypeV01-Normal.svg') format('svg');
+}

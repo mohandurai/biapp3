@@ -1,0 +1,54 @@
+
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox = "-9506 565 12500 564" version = "1.1">
+<!-- svg generated using QGIS www.qgis.org -->
+<g id="212---5---5_bbmp_polygon" inkscape:groupmode="layer" inkscape:label="212---5---5_bbmp_polygon">
+<g stroke="none" fill="" stroke-linejoin="round" stroke-width="0.26">
+
+		<defs>
+          <linearGradient id="solids212" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" style="stop-color:rgb(27, 104, 7);stop-opacity:1" />
+        <stop offset="48.0%" style="stop-color:rgb(27, 104, 7);stop-opacity:1" />
+        <stop offset="48.0%" style="stop-color:rgb(243, 12, 12);stop-opacity:1" />
+        <stop offset="100%" style="stop-color:rgb(243, 12, 12);stop-opacity:1" /></linearGradient > </defs >
+<g id = "212" fill="url(#solids212)" next_level = "212_5_7" >
+<path d="M 446,544 L 445,543 L 448,540 L 446,544 " />
+<path d="M 334,520 L 333,521 L 333,520 L 334,520 " />
+<path d="M 434,512 L 428,504 L 435,510 L 434,512 " />
+<path d="M 444,502 L 440,498 L 442,499 L 444,502 " />
+<path d="M 446,486 L 449,486 L 446,486 " />
+<path d="M 448,485 L 452,487 L 443,485 L 448,485 " />
+<path d="M 355,482 L 353,492 L 346,482 L 355,482 " />
+<path d="M 464,484 L 463,481 L 468,480 L 464,484 " />
+<path d="M 457,482 L 457,477 L 460,480 L 457,482 " />
+<path d="M 532,477 L 531,477 L 531,475 L 532,477 " />
+<path d="M 457,476 L 456,476 L 455,475 L 456,474 L 455,473 L 456,472 L 458,474 L 458,476 L 457,476 " />
+<path d="M 455,481 L 452,478 L 452,475 L 453,474 L 452,471 L 456,473 L 455,475 L 456,477 L 455,481 " />
+<path d="M 545,416 L 542,415 L 545,415 L 545,416 " />
+<path d="M 494,266 L 492,265 L 485,257 L 494,266 " />
+<path d="M 487,129 L 487,128 L 487,129 " />
+<path d="M 474,105 L 473,103 L 475,104 L 474,105 " />
+<path d="M 463,107 L 457,103 L 462,103 L 463,107 " />
+<path d="M 452,103 L 451,102 L 452,103 " />
+<path d="M 456,105 L 452,103 L 453,100 L 456,105 " />
+<path d="M 459,100 L 458,100 L 458,99 L 459,100 " />
+<path d="M 478,103 L 478,104 L 481,99 L 478,103 " />
+<path d="M 457,99 L 458,99 L 457,99 " />
+<path d="M 477,99 L 478,98 L 478,99 L 477,99 " />
+<path d="M 452,99 L 450,99 L 449,98 L 452,99 " />
+<path d="M 488,100 L 488,97 L 489,98 L 488,100 " />
+<path d="M 478,101 L 475,101 L 478,99 L 479,97 L 481,96 L 478,101 " />
+<path d="M 492,96 L 490,98 L 491,96 L 492,96 " />
+<path d="M 482,98 L 481,97 L 483,93 L 482,98 " />
+<path d="M 479,93 L 479,92 L 480,92 L 479,93 " />
+<path d="M 475,96 L 478,87 L 483,89 L 475,96 " />
+<path d="M 488,86 L 486,86 L 490,84 L 488,86 " />
+<path d="M 497,83 L 495,84 L 491,84 L 497,83 " />
+<path d="M 409,23 L 450,30 L 450,60 L 497,78 L 476,86 L 474,96 L 466,100 L 448,97 L 453,108 L 423,136 L 411,170 L 450,228 L 527,299 L 550,391 L 538,407 L 543,427 L 539,419 L 534,446 L 497,470 L 470,482 L 461,471 L 459,478 L 458,475 L 459,474 L 457,472 L 452,471 L 452,474 L 451,475 L 451,477 L 446,480 L 451,478 L 453,481 L 453,485 L 440,484 L 453,492 L 435,486 L 447,502 L 429,487 L 444,510 L 418,495 L 432,518 L 389,546 L 379,546 L 392,497 L 368,480 L 392,461 L 432,467 L 419,435 L 441,435 L 440,424 L 481,410 L 478,334 L 481,325 L 486,305 L 467,286 L 478,275 L 449,262 L 445,242 L 395,194 L 395,183 L 348,159 L 354,145 L 375,148 L 388,133 L 366,117 L 376,110 L 356,98 L 341,110 L 322,103 L 315,71 L 304,74 L 285,47 L 297,33 L 317,45 L 328,32 L 351,43 L 401,13 L 409,23 " />
+</g>
+</g>
+</g>
+<!-- QGIS extent for clipping, eg in Inkscape -->
+<!-- <g id="qgisviewbox" inkscape:groupmode="layer" inkscape:label="qgisviewbox" stroke="rgb(255,0,0)" stroke-width="1" fill="none" >
+<path d="M 0,560 L 836,560 L 836,0 L 0,0 L 0,560 " />
+</g> --></svg>

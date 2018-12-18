@@ -1,0 +1,2 @@
+[04-Jul-2015 09:50:48 UTC] PHP Fatal error:  Class 'yii\console\Controller' not found in /home/tuneem/public_html/tuneem/commands/HelloController.php on line 21
+[04-Jul-2015 09:50:51 UTC] PHP Fatal error:  Class 'yii\rbac\Rule' not found in /home/tuneem/public_html/tuneem/commands/UserRule.php on line 13
